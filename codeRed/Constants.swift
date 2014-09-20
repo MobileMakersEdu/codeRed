@@ -17,3 +17,5 @@ let kShipMovementFilter = 0.1 as CGFloat
 let kShipMovementInverseFilter = 1.0 - kShipMovementFilter as CGFloat
 let kShipScale = 0.5 as CGFloat
 let kShipXPosition = 200 as CGFloat
+let kBugImageName = "monster"
+let kBugSlowMovement = 4.0  

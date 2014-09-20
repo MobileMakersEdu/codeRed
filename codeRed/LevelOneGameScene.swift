@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class GameScene: SKScene
+class LevelOneGameScene: SKScene
 {
     var ship : Spaceship!
 
@@ -16,6 +16,8 @@ class GameScene: SKScene
     {
         ship = Spaceship(view: view)
         addChild(ship)
+
+        let bug = Bug(positionOne: frame.size.width, yPosition: view.center.y * 2, theScene: self)
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
