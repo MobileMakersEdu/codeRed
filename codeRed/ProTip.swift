@@ -28,7 +28,7 @@ class ProTip: Obstacle {
     {
         self.maker = maker
         let color = UIColor()
-        let texture = SKTexture(image: ProTip.imageForMaker(maker))
+        let texture = SKTexture(imageNamed: ProTip.imageForMaker(maker))
         let size = texture.size()
         super.init(texture: texture, color: color, size: size)
 
@@ -39,26 +39,25 @@ class ProTip: Obstacle {
     }
     
     
-    class func imageForMaker(maker: ProTipMaker) -> UIImage {
-        
-        var imageName : NSString! = "obstacle_"
+    class func imageForMaker(maker: ProTipMaker) -> String {
+
+        var imageName = String()
         switch maker
         {
             case .Dave:
-                imageName + kProOneImage
+              imageName = kProOneImage
             case .Don:
-                imageName + kProTwoImage
+               imageName = kProTwoImage
             case .Max:
-                imageName + kProThreeImage
+               imageName = kProThreeImage
             case .Kevin:
-                imageName + kProFourImage
+                imageName = kProFourImage
             case .Vik:
-                imageName + kProFiveImage
+                imageName = kProFiveImage
             case .Rich:
-                imageName + kProSixImage
+                imageName = kProSixImage
         }
-        
-        return UIImage(named: imageName)
+        return imageName
         
     }
 
