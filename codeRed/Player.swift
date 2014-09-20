@@ -11,7 +11,7 @@ import SpriteKit
 class Player {
    
     var livesLeft = 0
-
+    var name : String? = nil
     var genderIsMale = false
     
 }
