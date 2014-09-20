@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2333CD0219CDF38800B65F3B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23749ECA19CDF0F30026A878 /* SpriteKit.framework */; };
+		2333CD0419CDF3D600B65F3B /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0319CDF3D600B65F3B /* Obstacle.swift */; };
+		2333CD0619CDF3F400B65F3B /* GoodChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0519CDF3F400B65F3B /* GoodChallenge.swift */; };
+		2333CD0819CDF40600B65F3B /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0719CDF40600B65F3B /* Bug.swift */; };
+		2333CD0A19CDF42900B65F3B /* ProTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0919CDF42900B65F3B /* ProTip.swift */; };
+		2333CD0C19CDFF0A00B65F3B /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0B19CDFF0A00B65F3B /* BaseNode.swift */; };
 		23749EA419CDEDC10026A878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23749EA319CDEDC10026A878 /* AppDelegate.swift */; };
 		23749EA619CDEDC10026A878 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 23749EA519CDEDC10026A878 /* GameScene.sks */; };
 		23749EA819CDEDC10026A878 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23749EA719CDEDC10026A878 /* GameScene.swift */; };
@@ -15,6 +21,8 @@
 		23749EAF19CDEDC10026A878 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23749EAE19CDEDC10026A878 /* Images.xcassets */; };
 		23749EB219CDEDC10026A878 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23749EB019CDEDC10026A878 /* LaunchScreen.xib */; };
 		23749EBE19CDEDC10026A878 /* codeRedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23749EBD19CDEDC10026A878 /* codeRedTests.swift */; };
+		23749ECB19CDF0F30026A878 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23749ECA19CDF0F30026A878 /* SpriteKit.framework */; };
+		23749ECD19CDF2DB0026A878 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23749ECC19CDF2DB0026A878 /* Spaceship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2333CD0319CDF3D600B65F3B /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		2333CD0519CDF3F400B65F3B /* GoodChallenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodChallenge.swift; sourceTree = "<group>"; };
+		2333CD0719CDF40600B65F3B /* Bug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
+		2333CD0919CDF42900B65F3B /* ProTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTip.swift; sourceTree = "<group>"; };
+		2333CD0B19CDFF0A00B65F3B /* BaseNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
 		23749E9E19CDEDC10026A878 /* codeRed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeRed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23749EA219CDEDC10026A878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23749EA319CDEDC10026A878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +53,8 @@
 		23749EB719CDEDC10026A878 /* codeRedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeRedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23749EBC19CDEDC10026A878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23749EBD19CDEDC10026A878 /* codeRedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeRedTests.swift; sourceTree = "<group>"; };
+		23749ECA19CDF0F30026A878 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		23749ECC19CDF2DB0026A878 /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23749ECB19CDF0F30026A878 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2333CD0219CDF38800B65F3B /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 		23749E9519CDEDC10026A878 = {
 			isa = PBXGroup;
 			children = (
+				23749ECA19CDF0F30026A878 /* SpriteKit.framework */,
 				23749EA019CDEDC10026A878 /* codeRed */,
 				23749EBA19CDEDC10026A878 /* codeRedTests */,
 				23749E9F19CDEDC10026A878 /* Products */,
@@ -81,6 +99,7 @@
 		23749EA019CDEDC10026A878 /* codeRed */ = {
 			isa = PBXGroup;
 			children = (
+				23749EC719CDF06E0026A878 /* Data Model */,
 				23749EA319CDEDC10026A878 /* AppDelegate.swift */,
 				23749EA519CDEDC10026A878 /* GameScene.sks */,
 				23749EA719CDEDC10026A878 /* GameScene.swift */,
@@ -116,6 +135,19 @@
 				23749EBC19CDEDC10026A878 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23749EC719CDF06E0026A878 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				23749ECC19CDF2DB0026A878 /* Spaceship.swift */,
+				2333CD0319CDF3D600B65F3B /* Obstacle.swift */,
+				2333CD0519CDF3F400B65F3B /* GoodChallenge.swift */,
+				2333CD0719CDF40600B65F3B /* Bug.swift */,
+				2333CD0919CDF42900B65F3B /* ProTip.swift */,
+				2333CD0B19CDFF0A00B65F3B /* BaseNode.swift */,
+			);
+			name = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +253,12 @@
 			files = (
 				23749EA819CDEDC10026A878 /* GameScene.swift in Sources */,
 				23749EAA19CDEDC10026A878 /* GameViewController.swift in Sources */,
+				2333CD0C19CDFF0A00B65F3B /* BaseNode.swift in Sources */,
+				2333CD0619CDF3F400B65F3B /* GoodChallenge.swift in Sources */,
+				2333CD0819CDF40600B65F3B /* Bug.swift in Sources */,
+				2333CD0419CDF3D600B65F3B /* Obstacle.swift in Sources */,
+				2333CD0A19CDF42900B65F3B /* ProTip.swift in Sources */,
+				23749ECD19CDF2DB0026A878 /* Spaceship.swift in Sources */,
 				23749EA419CDEDC10026A878 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +453,7 @@
 				23749EC319CDEDC10026A878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23749EC419CDEDC10026A878 /* Build configuration list for PBXNativeTarget "codeRedTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +462,7 @@
 				23749EC619CDEDC10026A878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
