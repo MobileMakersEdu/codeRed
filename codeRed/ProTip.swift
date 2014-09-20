@@ -23,7 +23,7 @@ class ProTip: Obstacle {
     var maker: ProTipMaker! = nil
     
     
-    init(maker: ProTipMaker)
+    init(positionOne maker: ProTipMaker)
     {
         self.maker = maker
         let color = UIColor()
