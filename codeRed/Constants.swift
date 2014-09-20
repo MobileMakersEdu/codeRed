@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Constants.swift
 //  codeRed
 //
 //  Created by Rich Fellure on 9/20/14.
@@ -9,6 +9,11 @@
 import Foundation
 import SpriteKit
 
+
+//MARK --  Player
+let kPlayerStartingLives = 5
+
+//MARK --  Ship
 let kShipImageName = "Spaceship"
 let kShipZRotationUp = -1.2 as CGFloat
 let kShipZRotationDown = -1.8 as CGFloat
