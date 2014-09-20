@@ -8,8 +8,8 @@
 import SpriteKit
 import UIKit
 
-class Obstacle: SKSpriteNode {
+class ObstacleSpriteNode :SKSpriteNode {}
+
+class Obstacle: ObstacleSpriteNode {
     
-    
-   
 }
