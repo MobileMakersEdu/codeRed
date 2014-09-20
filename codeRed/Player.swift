@@ -9,6 +9,13 @@
 import SpriteKit
 
 class Player {
+
+    enum ColliderType: UInt32 {
+        case Player = 1
+        case Bug = 2
+        case GoodChallenge = 4
+        case ProTip = 8
+    }
    
     var livesLeft = kPlayerStartingLives
     var name : String? = nil
