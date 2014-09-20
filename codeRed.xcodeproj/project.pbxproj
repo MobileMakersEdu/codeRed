@@ -12,6 +12,7 @@
 		2333CD0619CDF3F400B65F3B /* GoodChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0519CDF3F400B65F3B /* GoodChallenge.swift */; };
 		2333CD0819CDF40600B65F3B /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0719CDF40600B65F3B /* Bug.swift */; };
 		2333CD0A19CDF42900B65F3B /* ProTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0919CDF42900B65F3B /* ProTip.swift */; };
+		2333CD0E19CE03B200B65F3B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333CD0D19CE03B200B65F3B /* Player.swift */; };
 		23749EA419CDEDC10026A878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23749EA319CDEDC10026A878 /* AppDelegate.swift */; };
 		23749EA619CDEDC10026A878 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 23749EA519CDEDC10026A878 /* GameScene.sks */; };
 		23749EA819CDEDC10026A878 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23749EA719CDEDC10026A878 /* GameScene.swift */; };
@@ -39,6 +40,7 @@
 		2333CD0519CDF3F400B65F3B /* GoodChallenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodChallenge.swift; sourceTree = "<group>"; };
 		2333CD0719CDF40600B65F3B /* Bug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 		2333CD0919CDF42900B65F3B /* ProTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProTip.swift; sourceTree = "<group>"; };
+		2333CD0D19CE03B200B65F3B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		23749E9E19CDEDC10026A878 /* codeRed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeRed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23749EA219CDEDC10026A878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23749EA319CDEDC10026A878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				2333CD0519CDF3F400B65F3B /* GoodChallenge.swift */,
 				2333CD0719CDF40600B65F3B /* Bug.swift */,
 				2333CD0919CDF42900B65F3B /* ProTip.swift */,
+				2333CD0D19CE03B200B65F3B /* Player.swift */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				2333CD0419CDF3D600B65F3B /* Obstacle.swift in Sources */,
 				2333CD0A19CDF42900B65F3B /* ProTip.swift in Sources */,
 				23749ECD19CDF2DB0026A878 /* Spaceship.swift in Sources */,
+				2333CD0E19CE03B200B65F3B /* Player.swift in Sources */,
 				23749EA419CDEDC10026A878 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
