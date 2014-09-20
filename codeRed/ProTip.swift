@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Mobile Makers. All rights reserved.
 //
 
-enum ProTipMaker : UInt32{
+enum ProTipMaker : UInt32
+{
     case Dave
     case Rich
     case Vik
@@ -23,13 +24,18 @@ class ProTip: Obstacle {
     var maker: ProTipMaker! = nil
     
     
-    init(positionOne maker: ProTipMaker)
+    init(positionOne maker: ProTipMaker, xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene, theSpeed: NSTimeInterval)
     {
         self.maker = maker
         let color = UIColor()
         let texture = SKTexture(image: ProTip.imageForMaker(maker))
         let size = texture.size()
         super.init(texture: texture, color: color, size: size)
+
+        self.position = CGPointMake(xPosition, yPosition)
+        theScene.addChild(self)
+
+        speed(theSpeed, yPosition: yPosition)
     }
     
     
@@ -39,21 +45,47 @@ class ProTip: Obstacle {
         switch maker
         {
             case .Dave:
-                imageName + "dave"
+                imageName + kProOneImage
             case .Don:
-                imageName + "don"
+                imageName + kProTwoImage
             case .Max:
-                imageName + "max"
+                imageName + kProThreeImage
             case .Kevin:
-                imageName + "kevin"
+                imageName + kProFourImage
             case .Vik:
-                imageName + "vik"
+                imageName + kProFiveImage
             case .Rich:
-                imageName + "rich"
+                imageName + kProSixImage
         }
         
         return UIImage(named: imageName)
         
     }
-   
+
+    //MARK: Speed Methods
+
+    func speed(speed: NSTimeInterval, yPosition: CGFloat)
+    {
+        let actionMove = SKAction.moveTo(CGPointMake(self.size.width/2, yPosition), duration: speed)
+        let actionMoveDone = SKAction.removeFromParent()
+        self.runAction(SKAction.sequence([actionMove, actionMoveDone]))
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

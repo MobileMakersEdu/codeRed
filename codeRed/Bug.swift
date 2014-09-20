@@ -10,7 +10,7 @@ import SpriteKit
 
 class Bug: Obstacle
 {
-    init(positionOne xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene)
+    init(positionOne xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene, theSpeed: NSTimeInterval)
     {
         let color = UIColor()
         let texture = SKTexture(imageNamed: kBugImageName)
@@ -19,10 +19,10 @@ class Bug: Obstacle
 
         self.position = CGPointMake(xPosition, yPosition)
         theScene.addChild(self)
-        speedOne(xPosition, yPosition: yPosition)
+        speed(theSpeed, yPosition: yPosition)
     }
 
-    init(positionTwo xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene)
+    init(positionTwo xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene, theSpeed: NSTimeInterval)
     {
         let color = UIColor()
         let texture = SKTexture(imageNamed: kBugImageName)
@@ -31,10 +31,10 @@ class Bug: Obstacle
 
         self.position = CGPointMake(xPosition, yPosition)
         theScene.addChild(self)
-        speedOne(xPosition, yPosition: yPosition)
+        speed(theSpeed, yPosition: yPosition)
     }
     
-    init(positionThree xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene)
+    init(positionThree xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene, theSpeed: NSTimeInterval)
     {
         let color = UIColor()
         let texture = SKTexture(imageNamed: kBugImageName)
@@ -43,12 +43,12 @@ class Bug: Obstacle
 
         self.position = CGPointMake(xPosition, yPosition)
         theScene.addChild(self)
-        speedOne(xPosition, yPosition: yPosition)
+        speed(theSpeed, yPosition: yPosition)
     }
 
-    func speedOne(xPostion: CGFloat, yPosition: CGFloat)
+    func speed(theSpeed: NSTimeInterval, yPosition: CGFloat)
     {
-        let actionMove = SKAction.moveTo(CGPointMake(self.size.width/2, yPosition), duration: kBugSlowMovement)
+        let actionMove = SKAction.moveTo(CGPointMake(self.size.width/2, yPosition), duration: theSpeed)
 
         let actionMoveDone = SKAction.removeFromParent()
         self.runAction(SKAction.sequence([actionMove, actionMoveDone]))
