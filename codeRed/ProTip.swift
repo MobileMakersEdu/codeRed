@@ -28,7 +28,35 @@ class ProTip: Obstacle {
     {
         self.maker = maker
         let color = UIColor()
-        let texture = SKTexture(imageNamed: ProTip.imageForMaker(maker))
+        let texture = SKTexture(imageNamed: ProTip.imageNameForMaker(maker))
+        let size = texture.size()
+        super.init(texture: texture, color: color, size: size)
+
+        self.position = CGPointMake(xPosition, yPosition)
+        theScene.addChild(self)
+
+        speed(theSpeed, yPosition: yPosition)
+    }
+
+    init(positionTwo maker: ProTipMaker, xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene, theSpeed: NSTimeInterval)
+    {
+        self.maker = maker
+        let color = UIColor()
+        let texture = SKTexture(imageNamed: ProTip.imageNameForMaker(maker))
+        let size = texture.size()
+        super.init(texture: texture, color: color, size: size)
+
+        self.position = CGPointMake(xPosition, yPosition)
+        theScene.addChild(self)
+
+        speed(theSpeed, yPosition: yPosition)
+    }
+
+    init(positionThree maker: ProTipMaker, xPosition: CGFloat, yPosition: CGFloat, theScene: SKScene, theSpeed: NSTimeInterval)
+    {
+        self.maker = maker
+        let color = UIColor()
+        let texture = SKTexture(imageNamed: ProTip.imageNameForMaker(maker))
         let size = texture.size()
         super.init(texture: texture, color: color, size: size)
 
@@ -38,8 +66,7 @@ class ProTip: Obstacle {
         speed(theSpeed, yPosition: yPosition)
     }
     
-    
-    class func imageForMaker(maker: ProTipMaker) -> String {
+    class func imageNameForMaker(maker: ProTipMaker) -> String {
 
         var imageName = String()
         switch maker

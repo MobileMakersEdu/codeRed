@@ -17,7 +17,7 @@ class Spaceship: Ship
     var touch : UITouch!
     var targetPosition : CGPoint!
 
-    init(view: SKView)
+    init(theScene: SKScene)
     {
         let color = UIColor()
         let texture = SKTexture(imageNamed: kShipImageName)
@@ -27,7 +27,8 @@ class Spaceship: Ship
         self.xScale = kShipScale
         self.yScale = kShipScale
         self.zRotation = kShipZRotationStandard
-        self.position = CGPointMake(kShipXPosition as CGFloat, view.center.y*2)
+        self.position = CGPointMake(kShipXPosition as CGFloat, kShipYPosition)
+        theScene.addChild(self)
     }
 
     func update()
