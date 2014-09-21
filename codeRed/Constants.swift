@@ -22,8 +22,12 @@ let kShipMovementInverseFilter = 1.0 - kShipMovementFilter as CGFloat
 let kShipScale = 0.5 as CGFloat
 let kShipXPosition = 200 as CGFloat
 let kShipYPosition = 250 as CGFloat
+
+//MARK: Bug
 let kBugImageName = "monster"
 let kBugSlowMovement = 4.0
+
+//MARK: ProTip
 let kProTipSpeedOne = 1.0
 let kProOneImage = "obstacle_dave"
 let kProTwoImage = "obstacle_don"

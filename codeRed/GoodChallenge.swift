@@ -6,8 +6,13 @@
 //  Copyright (c) 2014 Mobile Makers. All rights reserved.
 //
 
-import UIKit
+import SpriteKit
 
-class GoodChallenge: Obstacle {
-   
+class GoodChallenge: Obstacle
+{
+
+    init(positionOne xPosition: CGFloat, yPosition: CGFloat, theSpeed: NSTimeInterval, theScene: SKScene)
+    {
+        super.init()
+    }
 }
