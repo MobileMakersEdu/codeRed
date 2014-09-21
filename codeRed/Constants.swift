@@ -35,3 +35,7 @@ let kProThreeImage = "obstacle_max"
 let kProFourImage = "obstacle_vik"
 let kProFiveImage = "obstacle_rich"
 let kProSixImage = "obstacle_kevin"
+
+//MARK: GoodChallenge
+
+let kGoodChallengeImage = "kGoodChallengeImage"
