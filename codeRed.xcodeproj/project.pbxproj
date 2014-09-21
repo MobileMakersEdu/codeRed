@@ -23,6 +23,7 @@
 		23749EBE19CDEDC10026A878 /* codeRedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23749EBD19CDEDC10026A878 /* codeRedTests.swift */; };
 		23749ECB19CDF0F30026A878 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23749ECA19CDF0F30026A878 /* SpriteKit.framework */; };
 		23749ECD19CDF2DB0026A878 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23749ECC19CDF2DB0026A878 /* Spaceship.swift */; };
+		9387F56C19CE2C1E00A5CDC0 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387F56B19CE2C1E00A5CDC0 /* Enums.swift */; };
 		9B28C29119CE05CA00FF3B3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B28C29019CE05CA00FF3B3F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		23749EBD19CDEDC10026A878 /* codeRedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeRedTests.swift; sourceTree = "<group>"; };
 		23749ECA19CDF0F30026A878 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		23749ECC19CDF2DB0026A878 /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
+		9387F56B19CE2C1E00A5CDC0 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		9B28C29019CE05CA00FF3B3F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				9B28C29019CE05CA00FF3B3F /* Constants.swift */,
+				9387F56B19CE2C1E00A5CDC0 /* Enums.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				23749ECD19CDF2DB0026A878 /* Spaceship.swift in Sources */,
 				2333CD0E19CE03B200B65F3B /* Player.swift in Sources */,
 				23749EA419CDEDC10026A878 /* AppDelegate.swift in Sources */,
+				9387F56C19CE2C1E00A5CDC0 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
